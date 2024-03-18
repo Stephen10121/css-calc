@@ -12,23 +12,34 @@ body:has(#om:checked) {--oper:-;counter-set: final calc(var(--val1) var(--oper) 
 body:has(#ot:checked) {--oper:*;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
 body:has(#od:checked) {--oper:/;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
 
-body:has(#a:checked) {
-    --val1: 1;
-    --val2: 1;
+/* Set pad 1 values */
+body:has(#p10:checked) {--val1: 0;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
+body:has(#p11:checked) {--val1: 1;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
+body:has(#p12:checked) {--val1: 2;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
+body:has(#p13:checked) {--val1: 3;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
+body:has(#p14:checked) {--val1: 4;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
+body:has(#p15:checked) {--val1: 5;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
+body:has(#p16:checked) {--val1: 6;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
+body:has(#p17:checked) {--val1: 7;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
+body:has(#p18:checked) {--val1: 8;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
+body:has(#p19:checked) {--val1: 9;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
 
-    counter-set: final calc(var(--val1) var(--oper) var(--val2));
-}
+/* Set pad 2 values */
+body:has(#p20:checked) {--val2: 0;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
+body:has(#p21:checked) {--val2: 1;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
+body:has(#p22:checked) {--val2: 2;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
+body:has(#p23:checked) {--val2: 3;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
+body:has(#p24:checked) {--val2: 4;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
+body:has(#p25:checked) {--val2: 5;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
+body:has(#p26:checked) {--val2: 6;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
+body:has(#p27:checked) {--val2: 7;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
+body:has(#p28:checked) {--val2: 8;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
+body:has(#p29:checked) {--val2: 9;counter-set: final calc(var(--val1) var(--oper) var(--val2));}
 
-body:has(#b:checked) {
-    --val1: 2;
-    --val2: 2;
-
-    counter-set: final calc(var(--val1) var(--oper) var(--val2));
-}
-body:has(#c:checked) {
-    --val1: 3;
-    --val2: 3;
-
+body:has(#reset:active) {
+    --val1:0;
+    --val2:0;
+    --oper:+;
     counter-set: final calc(var(--val1) var(--oper) var(--val2));
 }
 
@@ -62,4 +73,9 @@ input {
 	position: absolute !important;
 	width: 1px !important;
 	white-space: nowrap !important;            /* 3 */
+}
+
+.pads {
+    display: flex;
+    gap: 20px;
 }

@@ -1,61 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css Calc</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <p id="b2">Current Data: </p>
-    <section>
-        <p>Operators</p>
-        <label for="op">
-            +
-            <input type="radio" name="operator" id="op" />
-        </label>
-        <label for="om">
-            -
-            <input type="radio" name="operator" id="om" />
-        </label>
-        <label for="ot">
-            *
-            <input type="radio" name="operator" id="ot" />
-        </label>
-        <label for="od">
-            /
-            <input type="radio" name="operator" id="od" />
-        </label>
-    </section>
-    <section>
-        <p>Pad 1</p>
-        <label>
-            1
-            <input type="radio" name="v1" id="p11" />
-        </label>
-        <label>
-            2
-            <input type="radio" name="v1" id="p12" />
-        </label>
-        <label>
-            3
-            <input type="radio" name="v1" id="p13" />
-        </label>
-    </section>
-    <section>
-        <p>Pad 2</p>
-        <label>
-            1
-            <input type="radio" name="v1" id="p21" />
-        </label>
-        <label>
-            2
-            <input type="radio" name="v1" id="p22" />
-        </label>
-        <label>
-            3
-            <input type="radio" name="v1" id="p23" />
-        </label>
-    </section>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Css Calc</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <button id="reset">Reset</button>
+        <p id="b2">Result: </p>
+        <div class="pads">
+            <section>
+                <p>Pad 1</p>
+                <label>0<input type="radio" name="p1" id="p10" /></label>
+                <label>1<input type="radio" name="p1" id="p11" /></label>
+                <label>2<input type="radio" name="p1" id="p12" /></label>
+                <label>3<input type="radio" name="p1" id="p13" /></label>
+                <label>4<input type="radio" name="p1" id="p14" /></label>
+                <label>5<input type="radio" name="p1" id="p15" /></label>
+                <label>6<input type="radio" name="p1" id="p16" /></label>
+                <label>7<input type="radio" name="p1" id="p17" /></label>
+                <label>8<input type="radio" name="p1" id="p18" /></label>
+                <label>9<input type="radio" name="p1" id="p19" /></label>
+            </section>
+            <section>
+                <p>Operators</p>
+                <label for="op">+<input type="radio" name="operator" id="op" /></label>
+                <label for="om">-<input type="radio" name="operator" id="om" /></label>
+                <label for="ot">*<input type="radio" name="operator" id="ot" /></label>
+                <label for="od">/<input type="radio" name="operator" id="od" /></label>
+            </section>
+            <section>
+                <p>Pad 2</p>
+                <label>0<input type="radio" name="p2" id="p20" /></label>
+                <label>1<input type="radio" name="p2" id="p21" /></label>
+                <label>2<input type="radio" name="p2" id="p22" /></label>
+                <label>3<input type="radio" name="p2" id="p23" /></label>
+                <label>4<input type="radio" name="p2" id="p24" /></label>
+                <label>5<input type="radio" name="p2" id="p25" /></label>
+                <label>6<input type="radio" name="p2" id="p26" /></label>
+                <label>7<input type="radio" name="p2" id="p27" /></label>
+                <label>8<input type="radio" name="p2" id="p28" /></label>
+                <label>9<input type="radio" name="p2" id="p29" /></label>
+            </section>
+        </div>
+    </body>
 </html>
