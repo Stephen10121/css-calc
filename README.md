@@ -1,0 +1,1 @@
+is it possible to create a calculator using no javascript?
